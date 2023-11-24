@@ -28,12 +28,12 @@ end
 
 #4 
 function Diophantine_solve(a, b, c)
-    d = gcd(a, b)
+    d = gcd_(a, b)
     if c % d != 0
         return nothing
     end
     
-    a_d, x0, y0 = gcdx_(a, b)
+    a_d, x0, y0 = gcd_(a, b)
     x = x0 * (c ÷ d)
     y = y0 * (c ÷ d)
     
