@@ -33,7 +33,7 @@ function Diophantine_solve(a, b, c)
         return nothing
     end
     
-    a_d, x0, y0 = gcd_(a, b)
+    a_d, x0, y0 = extended_gcd(a, b)
     x = x0 * (c ÷ d)
     y = y0 * (c ÷ d)
     
